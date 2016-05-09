@@ -1,0 +1,22 @@
+{
+  "name": "Dasha",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Dasha"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "slick-carousel": "slick.js#^1.5.9"
+  }
+}

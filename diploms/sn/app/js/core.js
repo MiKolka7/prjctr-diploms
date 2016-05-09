@@ -1,0 +1,1 @@
+function initMap(){var o={lat:-6.1966213,lng:106.860404},n=new google.maps.Map(document.getElementById("map"),{center:o,zoom:11}),e="//"+window.location.hostname+(window.location.port>=3e3?":"+window.location.port:"")+"/app/img/marker.png";new google.maps.Marker({position:o,icon:e,map:n}),n.setCenter(o),n.setZoom(11)}$(function(){$("#slider").slick({arrows:!1,dots:!0,fade:!0})});

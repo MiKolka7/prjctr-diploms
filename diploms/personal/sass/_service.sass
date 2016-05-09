@@ -1,0 +1,179 @@
+.service__title
+	&::before
+		left: 30%
+		width: 40%
+		
+.my-servicies__item--hover
+	width: 0
+	height: 0
+	border-top: 80px solid #fff
+	border-right: 80px solid transparent
+	margin: 0
+	position: absolute
+	top: -1px
+	left: 0
+	display: none
+	
+	&::before
+		content: "" 
+		width: 20px
+		height: 2px
+		background-color: #f39c12
+		position: absolute
+		top: -80px
+		left: 0
+		margin: 0
+	
+	&::after
+		content: "" 
+		width: 2px
+		height: 20px
+		background-color: #f39c12
+		position: absolute
+		top: -80px
+		left: -1px
+		margin: 0
+
+.service__my-servicies
+	margin: -0.5% -0.5%
+	font-size: 0
+	padding: 0 
+
+.service__my-servicies__item
+	list-style-type: none
+	display: inline-block
+	margin: 0.5% 0.5%
+	width: 21.5%
+	border: 1px solid #ebebeb
+	padding: 3% 1% 
+	cursor: pointer
+	position: relative
+
+	&:hover
+		background-color: #f39c12
+		border-color: #fff
+		
+		.my-servicies__item--hover
+			display: block	
+			
+		.my-servicies__item__icon
+			background-color: #fff
+		
+		.service__my-servicies__item
+			border: transparent
+
+		.my-servicies__item__title
+			color: #fff
+
+		.my-servicies__item__description
+			color: #fff
+			
+		.my-servicies__item__icon-photography
+			background-position: -136px -34px
+				
+		.my-servicies__item__icon-event
+			background-position: -102px -34px
+
+		.my-servicies__item__icon-mathematics
+			background-position: -204px -34px
+
+		.my-servicies__item__icon-programming
+			background-position: -34px -34px
+
+		.my-servicies__item__icon-global
+			background-position: 0 -34px
+
+		.my-servicies__item__icon-design
+			background-position: -240px -34px
+
+		.my-servicies__item__icon-responsive
+			background-position: -68px -34px
+
+		.my-servicies__item__icon-seo
+			background-position: -170px -34px
+			
+	+media(960)
+		width: 30%
+		
+	+media(768)
+		width: 46%
+	 
+	+media(480)
+		width: 233px
+		padding: 5%
+		margin: 2%
+	
+	+media(320)
+		width: 86%
+		margin: 0
+
+.my-servicies__item__icon
+	width: 34px
+	height: 34px
+	background-color: #919190
+	border-radius: 100% 
+	padding: 21.5px
+	margin: 0 auto 
+
+.my-servicies__item__icon-img
+	width: 34px
+	height: 34px
+	margin: 0
+	background-repeat: no-repeat 
+
+.my-servicies__item__title
+	color: #6e6e6e
+	font-family: Raleway
+	font-size: 22px
+	line-height: 37px
+	
+	+media(1440)
+		font-size: 18px
+
+.my-servicies__item__description
+	color: #6b6b6b
+	font-size: 17px
+	line-height: 26px
+	
+	+media(480)
+		font-size: 12px
+	
+.my-servicies__item__icon-photography
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: -136px 0
+		
+.my-servicies__item__icon-event
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: -102px 0
+
+.my-servicies__item__icon-mathematics
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: -204px 0
+
+.my-servicies__item__icon-programming
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: -34px 0
+
+.my-servicies__item__icon-global
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: 0 0
+
+.my-servicies__item__icon-design
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: -240px 0
+
+.my-servicies__item__icon-responsive
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: -68px 0
+
+.my-servicies__item__icon-seo
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		position: -170px 0

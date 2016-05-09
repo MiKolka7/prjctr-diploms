@@ -1,0 +1,160 @@
+@viewport
+	width: device-width
+	zoom: 1
+	max-zoom: 2
+	
+@-webkit-viewport
+	width: device-width
+	zoom: 1
+	max-zoom: 2
+
+@-moz-viewport
+	width: device-width
+	zoom: 1
+	max-zoom: 2
+
+@-o-viewport
+	width: device-width
+	zoom: 1
+	max-zoom: 2
+	
+body
+	font-family: 'Arial', 'Raleway'
+
+.section
+	width: 100%
+
+.container
+	max-width: 1170px
+	width: 96% 
+	margin: 0 auto
+	text-align: center
+	padding: 9.5% 2%
+	
+	+media(1440)
+		max-width: 960px
+	
+	+media(480)
+		width: 90% 
+
+.has-no-backdown
+	padding: 9.5% 2% 0
+
+.has-w-full
+	max-width: 96%
+
+.clearfix::after
+    content: ''
+    overflow: hidden
+    display: table
+    clear: both
+
+.title
+	text:
+		transform: uppercase
+		align: center
+	color: #383838
+	font:
+		family: 'Raleway'
+		size: 48px
+		weight: 700
+	color: #383838
+	
+	+media(1440)
+		font-size: 40px
+	
+	+media(1280)
+		font-size: 32px
+		
+	+media(960)
+		font-size: 28px
+		
+	+media(780)
+		font-size: 24px
+		
+	+media(640)
+		font-size: 20px	
+
+.is-white
+	color: #fff
+	
+.description
+	font-family: 'Arial', 'Raleway'
+	color: #686767
+	font-weight: 400
+	
+.section-title
+	@extend .title
+	position: relative
+	margin-bottom: 10% 
+	&::before
+		content: ''
+		height: 1px
+		background-color: #f39c12
+		position: absolute
+		left: 15%
+		top: 126%
+		width: 70% 
+
+	&::after
+		content: ''
+		width: 40px
+		height: 5px
+		background-color: #f39c12
+		position: absolute
+		left: 50%
+		top: 122%
+		transform: translateX(-50%)
+	
+.is-transparent
+	background-color: transparent
+
+.slick-dots
+	list-style-type: none
+	text-align: center
+	padding: 5% 0 0 0
+
+.slick-dots
+	li
+		width: 11px
+		height: 11px
+		display: inline-block
+		margin: 0 3px
+		background-color: #b7b7b7
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		cursor: pointer
+		padding: 0
+		
+		button
+			font-size: 0
+			color: transparent 
+			border: none
+			display: none
+.slick-dots
+	.slick-active
+		background-color: #414141
+		&:hover
+			background-color: #828181
+
+#story
+	.slick-prev
+		display: none !important
+
+#client
+	.slick-prev
+		display: none !important
+
+#story
+	.slick-next
+		display: none !important
+		
+#client
+	.slick-next
+		display: none !important
+		
+.slick-next:focus
+	outline-style: none
+
+.slick-prev:focus
+	outline-style: none

@@ -1,0 +1,150 @@
+.gallery__title
+	&::before
+		left: 30%
+		width: 40% 
+    
+.gallery-sorting
+	text-align: center
+	padding: 0 
+
+.gallery-sorting__item
+	padding: 1.5% 0
+	font-size: 20px
+	color: #565656
+	text-decoration: none
+	display: inline-block
+	width: 165px
+	
+	&:hover
+		color: #fff
+		font-weight: 700
+		background-color: #f39c12
+		
+	+media(960)
+		font-size: 18px
+		width: 140px
+		
+	+media(768)
+		font-size: 16px 
+		width: 120px
+	
+	+media(640)
+		font-size: 14px
+		width: 107px
+	
+	+media(480)
+		padding: 10px 0 
+
+.gallery__item
+	list-style-type: none
+	margin: 1%
+	position: relative
+	display: inline-block
+	width: 31.33%
+	padding: 0
+	
+	&::before
+		content: "" 
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: rgba(35, 35, 35, 0.5)
+		display: none
+	
+	&:hover
+		&::before
+			display: block
+		.gallery__item
+			.fa-search::before
+				display: block
+		.gallery__item__screen-icon::before
+			display: block
+		.gallery__item-wrap
+			display: block
+
+.gallery-container
+	font-size: 0
+	margin: 6% -1% 0
+	padding: 0
+
+	:nth-of-type(4)
+		width: 23%
+			
+	:nth-of-type(5)
+		width: 23%
+		
+	:nth-of-type(6)
+		width: 23%
+		
+	:nth-of-type(7)
+		width: 23%
+	
+	+media(640)	
+		.gallery__item
+			width: 48%
+		
+		:nth-of-type(3)
+			width: 31.33%
+		
+		:nth-of-type(4)
+			width: 31.33%
+		
+		:nth-of-type(5)
+			width: 31.33%
+	
+	+media(480)
+		.gallery__item
+			width: 97% 
+
+.gallery__item__img
+	width: 100%
+
+.gallery__item
+	.fa-search:before
+		content: "\f002"
+		font-size: x-large
+		position: absolute
+		top: 4%
+		right: 4%
+		background: #f39c12
+		width: 70px
+		height: 70px
+		border-radius: 100%
+		display: none
+
+.gallery__item__screen-icon:before
+	color: #fff
+	vertical-align: middle
+	line-height: 70px
+	text-align: center
+	display: none
+
+.gallery__item-wrap
+	background-color: #232323
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 4%
+	display: none
+			
+.gallery__item__title
+	font-size: 20px
+	margin: 0
+	
+	+media(768)
+		font-size: 18px 
+		
+	+media(480)
+		font-size: 14px 
+
+.gallery__item__description
+	font-size: 20px
+	
+	+media(768)
+		font-size: 14px 
+		
+	+media(480)
+		font-size: 12px

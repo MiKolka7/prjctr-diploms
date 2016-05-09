@@ -1,0 +1,99 @@
+.works {
+
+  &__gallery {
+    padding: 50px 0 0 0;
+    box-sizing: border-box;
+    font-size:0;
+
+    .item {
+      display: block;
+      width: 20%;
+      float: left;
+      opacity: 1;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+
+      &:hover .mask {
+        top: 0;
+
+        .tc {opacity: 1;}
+      }
+
+      & img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+      } 
+    
+      .mask {
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        background: rgba(0,0,0,0.7);
+        box-sizing:border-box;
+        top: 100%;
+        -webkit-transition: top .2s;
+        -moz-transition: top .2s;
+        -ms-transition: top .2s;
+        -o-transition: top .2s;
+        transition: top .2s;
+
+        .tc {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          -webkit-transform: translate(0,-50%,0);
+          -moz-transform: translate(0,-50%,0);
+          -ms-transform: translate(0,-50%,0);
+          -o-transform: translate(0,-50%,0);
+          transform: translate(0,-50%,0);
+          opacity: 0;
+          -webkit-transition: opacity .3s;
+          -moz-transition: opacity .3s;
+          -ms-transition: opacity .3s;
+          -o-transition: opacity .3s;
+          transition: opacity .3s;
+        }
+
+        .title,
+        .subtitle {
+          color: #f2f2f2;
+          display: block;
+          font-family: Montserrat, sans-serif;
+          margin: 5px 0;
+        }
+
+        .title {
+          font-size: 15px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        .subtitle {font-size: 13px;}
+
+      }
+  
+      & a.info {
+         position:relative;
+         top:-10px;
+         opacity: 0;
+         transition: opacity 0.5s 0s ease-in-out;
+
+         display: inline-block;
+         text-decoration: none;
+         padding:0;
+         text-indent:-9999px;
+      }
+
+      &:hover a.info {
+         opacity:1;
+         transition-delay: 0.3s;
+      }
+    }
+  }
+}
+  

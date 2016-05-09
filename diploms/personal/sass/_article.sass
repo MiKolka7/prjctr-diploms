@@ -1,0 +1,124 @@
+.story__article
+	margin: 0 -1%
+	
+	+media(640)
+		article:first-of-type
+			margin-bottom: 2% 
+
+.story__title
+	&::before
+		left: 30%
+		width: 40% 
+
+.article__item
+	width: 47.6% 
+	border: 1px solid
+	border-color: #ddd
+	text-align: left
+	display: inline-block
+	margin: 0 1%
+	padding: 0
+	
+	+media(1440)
+		width: 47%
+	
+	+media(640)
+		width: 80%
+	
+	+media(480)
+		width: 100%
+
+.article__item-content
+	width: 49.89%
+	padding: 5%
+	float: left
+
+	+media (320)
+		width: 90% 
+
+.article__item-data
+	color: #7e7d7d
+	font-family: Raleway
+	font-size: 17px
+	padding-bottom: 2%
+	
+	+media(640)
+		font-size: 15px
+		
+	+media(320)
+		font-size: 13px 
+
+.article__item-title
+	color: #f39c12
+	font-family: 'Arial', 'Raleway'
+	font-size: 19px
+	font-weight: 700
+	
+	+media(640)
+		font-size: 16px
+		
+	+media(320)
+		font-size: 14px 
+
+.article__descriptiion
+	font-size: 17px
+	padding: 6% 0 8%
+	color: #858282
+	
+	+media(640)
+		font-size: 14px
+		
+	+media(320)
+		font-size: 12px
+
+.article__button
+	color: white
+	font-family: 'Arial', 'Raleway'
+	font-size: 17px
+	font-weight: 400
+	background-color: #aaa
+	padding: 3% 5%
+	border: none
+	&:hover
+		background-color: #282828
+	
+	+media(640)
+		font-size: 16px
+		
+	+media(320)
+		font-size: 14px
+
+.article__item-img
+	width: 40.11%
+	height: 287px 
+	float: right
+	margin: 0
+	background:
+		position: center
+		repeat: no-repeat
+		size: cover
+	
+	+media(640)
+		height: 220px
+		
+	+media(320)
+		display: none
+
+.article__item-img--july
+	background-image: url("../img/blog/06.06.2015.jpg")
+	
+	+media(320)
+		display: none
+		
+.article__item-img--may
+	background-image: url("../img/blog/08.05.2015.jpg")
+	
+	+media(320)
+		display: none
+
+
+.is-right-pos
+	float: right
+
+.is-left-pos
+	float: left

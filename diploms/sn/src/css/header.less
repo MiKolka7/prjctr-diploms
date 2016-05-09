@@ -1,0 +1,59 @@
+.header {
+  padding-top: 20px;
+
+  &__menu {
+    color: #fff;
+    float: right;
+    display: inline;
+
+    cursor: pointer;
+    z-index: 3;
+    width: 25px;
+
+    span {
+      display: block;
+      height: 5px;
+      background-color: #fff;
+      margin: 5px 0 0;
+      position: relative;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+    
+
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 100%;
+      transition: 0.55s;
+    }
+
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    
+    .menu-middle-click {
+      opacity: 0;
+    }
+
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+  }
+}
+
+  nav {
+    padding: 5px 0;
+  }
+
+}

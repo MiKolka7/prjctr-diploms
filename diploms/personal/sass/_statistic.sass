@@ -1,0 +1,155 @@
+.statistic
+	background-image: url(../img/my_statistic.jpg)
+	background-size: cover 
+
+.statistic__title
+	&::before
+		left: 25%
+		width: 50%
+
+.statistic__point
+	font-size: 0
+	margin: 25px 0 0
+	padding: 0
+
+.statistic__point__item
+	list-style-type: none
+	display: inline-block
+	text-align: center
+	width: 33%
+	padding: 0
+	vertical-align: top
+	margin: 0 
+	
+	+media(230)
+		width: 100% 
+	 
+.statistic__item__icon
+	width: 55px
+	height: 55px
+	background-color: #fff
+	margin: 0 auto
+	border-radius: 100%
+	padding: 45px
+	margin: 41px auto 45px
+	
+	+media(1280)
+		width: 55px
+		height: 55px
+		
+	+media(960)
+		font-size: 26px
+		padding: 38px
+		
+	+media(780)
+		font-size: 20px
+		padding: 30px
+	
+	+media(640)
+		padding: 15px
+		margin: 10% auto 
+		 
+	+media(320)
+		display: none
+		
+.statistic__item__icon-img
+	width: 55px
+	height: 50px
+	background:
+		image: url(../pic/my_service/sprite_service.png)
+		repeat: no-repeat
+	margin: 2.5px 0
+
+.statistic__item__icon--projects
+	background-position: 0 -78px 
+	
+.statistic__item__icon--client
+	background-position: -55px -78px
+	position: relative
+	
+	&::after
+		content: ''
+		height: 3px 
+		width: 550% 
+		background-color: #FFF
+		position: absolute
+		top: 50%
+		left: 100%
+		
+		+media(1440)
+			width: 450%
+		
+		+media(960)
+			width: 380%
+
+		+media(768)
+			width: 290%
+			
+		+media(640)
+			width: 240%
+			
+		+media(480)
+			display: none
+	
+	&::before
+		content: ''
+		height: 3px 
+		width: 550% 
+		background-color: #FFF
+		position: absolute
+		top: 50%
+		right: 100%
+		
+		+media(1440)
+			width: 450%
+		
+		+media(960)
+			width: 380%
+
+		+media(768)
+			width: 290%
+			
+		+media(640)
+			width: 240%
+			
+		+media(480)
+			display: none
+			
+.statistic__item__icon--awards
+	background-position: -110px -78px
+
+.statistic__item__value
+	color: #fff
+	font-size: 40px
+	line-height: 42px
+	text-transform: uppercase
+
+	+media(1280)
+		font-size: 30px
+		
+	+media(960)
+		font-size: 26px
+		
+	+media(780)
+		font-size: 20px
+		
+	+media(480)
+		font-size: 16px
+		line-height: 20px
+		padding-top: 10px
+
+.statistic__item__title
+	font-size: 25px
+	line-height: 42px
+	margin: 0
+	
+	+media(1280)
+		font-size: 20px
+		
+	+media(780)
+		font-size: 18px
+		
+	+media(480)
+		font-size: 14px
+		line-height: 25px
+		margin: 0 2%

@@ -1,0 +1,180 @@
+.about__container__item
+	width: 49%
+	list-style-type: none
+	display: inline-block
+	vertical-align: top
+
+	+media(768)
+		width: 100%
+		
+		&:first-of-type
+			display: none	
+	
+.about__img
+	max-width: 891px
+	width: 100%
+	padding-right: 60px 
+
+.about__container__item--text
+	padding: 0 13% 0 6%
+	
+	+media(768)
+		padding: 0 2% 
+
+.about__container__progres-bar
+	padding: 13% 13% 0 6%
+	
+	+media(1440)
+		padding-top: 6%
+		
+	+media(1024)
+		padding-top: 17%
+	
+	+media(960)
+		margin-left: -92%
+		padding-top: 12% 
+		
+	+media(768)
+		padding: 5% 2% 0
+		margin-left: 0
+
+.about__description
+	font-size: 20px
+	line-height: 31px
+	
+	p
+		margin-bottom: 2%
+	
+	+media(1440)
+		font-size: 16px
+
+	+media(960)
+		font-size: 14px
+		
+	+media(480)
+		font-size: 12px
+		line-height: 18px
+
+.about__progres-bar__item__wrap
+	width: 80%
+	height: 17px
+	background-color: #ececec
+	margin: 10px 47px 40px 0
+	overflow: hidden
+	position: relative
+	display: inline-block
+
+	+media(1440)
+		width: 76%
+		margin-bottom: 4% 
+		
+	+media(1280)
+		width: 71%
+		
+	+media(1024)
+		width: 78%
+		margin-right: 0
+	
+	+media(320)
+		width: 68% 
+		
+.about__progres-bar__item--hover
+	background-color: #f39c12
+	height: 17px
+	position: absolute
+	left: 0
+	top: 0
+	animation: slide 3s linear
+	-webkit-animation: slide 3s
+	-moz-animation: slide 3s
+	-o-animation: slide 3s
+
+@keyframes slide
+	0%
+		width: 0
+	25%
+		width: 100%
+	100%
+		width: normal
+		
+@-webkit-keyframes slide
+	0%
+		width: 0
+	25%
+		width: 100%
+	100%
+		width: normal
+
+@-moz-keyframes slide
+	0%
+		width: 0
+	25%
+		width: 100%
+	100%
+		width: normal
+
+@-o-keyframes slide
+	0%
+		width: 0
+	25%
+		width: 100%
+	100%
+		width: normal
+		
+.about__progres-bar__item--hover-photoshop
+	width: 80%
+
+.about__progres-bar__item--hover-illustrator
+	width: 60%
+	
+.about__progres-bar__item--hover-indesign
+	width: 70%
+
+.about__progres-bar__item--hover-html5
+	width: 50%
+
+.about__progres-bar__item--hover-php
+	width: 90%
+
+.about__progres-bar__item__name
+	color: #383838
+	font:
+		size: 20px
+		weight: 700
+	
+	+media(1024)
+		font-size: 16px
+	
+	+media(640)
+		font-size: 14px 
+	
+.about__progres-bar__item__icon
+	background:
+		image: url(../pic/about_me/persent.png)
+		repeat: no-repeat
+	width: 70px
+	height: 37px
+	text-align: right
+	line-height: 42px
+	font-size: 20px
+	display: inline-block
+	margin: 0
+	vertical-align: top
+	float: right
+	
+	+media(1280)
+		width: 65px
+		
+	+media(480)
+		width: 60px
+	
+	+media(320)
+		width: 54px 
+
+.about__progres-bar__item__value
+	padding-right: 5px
+	color: #fff
+	font-weight: 400
+	
+	+media(640)
+		font-size: 14px 

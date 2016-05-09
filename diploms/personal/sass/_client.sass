@@ -1,0 +1,158 @@
+.feedback__title::before
+	left: 25%
+	width: 50%
+
+.feedback__group
+	margin: 0 -10px
+	 
+.feedback__item
+	position: relative
+	width: 43.82%
+	margin: 0 10px
+	display: inline-block
+	margin-bottom: 115px 
+	
+	+media(1440)
+		width: 43%
+	
+	+media(640)
+		width: 93%
+		margin-top: 100px
+		margin-bottom: 0 
+
+.feedback__item-content
+	background-color: #f6f6f6
+	padding: 4% 
+	text-align: left
+	
+	&::before
+		content: ""
+		width: 0
+		height: 0
+		border-left: 19px solid transparent
+		border-right: 19px solid transparent
+		border-top: 19px solid #f6f6f6
+		position: absolute
+		top: 100%
+		left: 15%
+		
+		+media(640)
+			border-top: none
+			border-bottom: 19px solid #f6f6f6
+			top: -13%
+			left: 15%
+	
+.feedback__shot-description
+	font-size: 17px
+	font-weight: 700
+	margin: 3% 0
+	
+	+media(768)
+		font-size: 14px
+		
+	+media(480)
+		font-size: 12px
+
+.feedback__description
+	color: #838282
+	font-size: 17px
+	font-style: italic
+	
+	+media(768)
+		font-size: 14px
+		
+	+media(480)
+		font-size: 12px 
+
+.feedback__profile-img
+	background:
+		position: center
+		repeat: no-repeat
+		size: cover
+	width: 88px
+	height: 87px
+	position: absolute
+	top: 120%
+	left: 11%
+	margin: 0
+	
+	+media(640)
+		top: -87%
+		left: 11%  
+	
+	+media(480)
+		top: -99%
+	
+	+media(320)
+		top: -94%
+		left: 2%
+		
+.john_smith
+	background-image: url("../img/feedback/john_smith.png")
+
+.john_doe
+	background-image: url("../img/feedback/john_doe.png")
+
+.feedback__profile-name
+	position: absolute
+	font-size: 17px
+	color: #f39c12
+	font-weight: 700
+	position: absolute
+	top: 150%
+	left: 31%
+	
+	+media(1280)
+		left: 36%
+	
+	+media(960)
+		left: 42%
+		font-size: 16px
+		
+	+media(768)
+		left: 50% 
+		font-size: 14px
+		top: 165%
+	
+	+media(640)
+		left: 31%
+		top: -47%
+
+	+media(480)
+		font-size: 12px
+		left: 45%
+	
+	+media(320)
+		left: 49% 
+
+.feedback__profile-job
+	font-size: 17px
+	text-align: left
+	color: #696868
+	font-style: italic
+	position: absolute
+	top: 134%
+	left: 31%
+	
+	+media(1280)
+		left: 36%
+		
+	+media(960)
+		left: 42%
+		font-size: 16px
+	
+	+media(768)
+		left: 50%
+		font-size: 14px
+	
+	+media(640)
+		top: -63%
+		left: 31%
+	
+	+media(480)
+		font-size: 12px
+		left: 45%
+	
+	+media(320)
+		left: 49%
+		top: -35% 
